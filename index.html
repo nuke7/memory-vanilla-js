@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <style>
+      .card {
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        cursor: pointer;
+        border: 2px solid #ccc;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2rem;
+        margin: 2px;
+      }
+      .card:hover {
+        border: 1px solid #ccf;
+      }
+      section {
+        padding: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="board-size">
+      <label for="boardSize">select board size</label>
+      <select
+        name="boardSize"
+        id="boardSize"
+      >
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+      <button onclick="startGame()">New Game</button>
+    </section>
+    <div id="gameBoard"></div>
+    <div
+      id="gameEndScreen"
+      style="display: none"
+    >
+      <h2>Congratulations! You've completed the game.</h2>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
